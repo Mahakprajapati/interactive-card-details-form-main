@@ -6,6 +6,8 @@
 .container {
   display: flex;
   font-family: "Space Grotesk", sans-serif;
+  height: 100vh;
+  position: relative;
 }
 
 .main-desktop {
@@ -207,7 +209,7 @@ input:focus {
     background-repeat: no-repeat;
     background-size: contain;
     width: 530px;
-    height: 100vh;
+    height: 84vh;
   }
 
   .container {
