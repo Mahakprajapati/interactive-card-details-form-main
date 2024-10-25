@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.main-desktop {
+  background-image: url(./interactive-card-details-form-main/images/bg-main-desktop.png);
+  height: 100vh;
+}
+
+img {
+  width: 100%;
+}
+
+input {
+  width: 100%;
+}
+
+.card-container {
+  /* display: flex; */
+  width: 100%;
+  max-width: 35%;
+}
+
+.text-container-outer {
+  display: grid;
+  align-items: center;
+  flex-direction: column;
+  margin-inline: auto;
+}
+
+.text-container {
+  max-width: 300px;
+  margin-bottom: 1rem;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  max-width: 30%;
+  top: 0;
+}
+
+.card-logo {
+  width: 25%;
+  position: absolute;
+  margin: 1rem;
+}
+
+ .card-front  #number {
+  position: absolute;
+  bottom: 50px;
+  font-size: 2em;
+  left: 10%;
+  letter-spacing: 2px;
+}
+.name-container,
+.number-container {
+  margin-bottom: 1rem;
+}
+
+.name-CVC-container {
+  position: absolute;
+  padding: 1rem;
+  bottom: 0;
+  left: 4%;
+  max-width: 342px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+
+.card-front {
+  color: #ffff;
+  top: 10%;
+  left: 10%;
+}
+
+.card-back {
+  color: #ffff;
+  top: 55%;
+  left: 20%;
+}
+
+.card-back p {
+  position: absolute;
+  top: 0;
+  margin-left: 77%;
+  margin-top: 23%;
+  text-align: right;
+  letter-spacing: 2px;
+}
+
+.m-y-cvc-container {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.M-Y-container {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+}
+
+.CVC-container {
+  width: 100%;
+}
+
+input {
+  outline: none;
+  border: 1.4px solid hsl(270, 3%, 87%);
+  padding-block: 0.5rem;
+  padding-inline: 0.3rem;
+  border-radius: 6px;
+}
+.button {
+  color: #ffff;
+  background-color: hsl(278, 68%, 11%);
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 7px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+input:focus {
+  border: 1.4px solid hsl(278, 94%, 30%);
+}
+.err {
+  font-size: 10px;
+  color: hsl(0, 100%, 66%);
+  display: none;
+}
+
+.error input {
+  border: 1.4px solid hsl(0, 100%, 66%);
+}
+
+.error .err {
+  display: block;
+}
+
+.text-container {
+  display: block;
+}
+
+
+.completed-container {
+  display: none;
+}
+
+.completed-container {
+  text-align: center;
+  width: 150%;
+}
+.completed-container img {
+  width: 60px;
+  display: inline-block;
+  /* height: 200px; */
+}
+.completed-container .button {
+  margin-top: 1rem;
+}
+.completed-container p {
+  margin-top: 1rem;
+  color: hsl(279, 6%, 55%);
+}
+.completed-container h1 {
+  margin-top: 2rem;
+}
+
+@media (min-width: 426px) {
+   .card-front  #number {
+    font-size: 1em;
+    letter-spacing: unset;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-desktop {
+    background-image: url(./interactive-card-details-form-main/images/bg-main-desktop.png);
+    height: 100vh;
+  }
+}
+@media (max-width: 855px) {
+   .card-front  #number {
+    font-size: 1em;
+    letter-spacing: unset;
+  }
+}
+
+@media (max-width: 426px) {
+  .main-desktop {
+    background-image: url(./interactive-card-details-form-main/images/bg-main-mobile.png);
+    display: none;
+  }
+
+  .main-mobile {
+    background-image: url(./interactive-card-details-form-main/images/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 530px;
+    height: 100vh;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-container {
+    max-width: unset;
+  }
+
+  .text-container-outer {
+    display: unset;
+    width: 530px;
+    padding: 2rem;
+    height: unset;
+  }
+
+  img {
+    width: unset;
+  }
+
+  .card-front {
+    color: #ffff;
+    top: 36%;
+    left: 4%;
+    width: 447px;
+    z-index: 1;
+    max-width: unset;
+  }
+
+  .card-back {
+    color: #ffff;
+    top: 9%;
+    left: 21%;
+    width: 447px;
+  }
+
+   .card-front  #number {
+    position: absolute;
+    bottom: 50px;
+    font-size: 16px;
+    left: 6%;
+    width: 447px;
+  }
+  .name-CVC-container {
+    width: 447px;
+  }
+  .card-back p {
+    position: absolute;
+    top: 0;
+    text-align: right;
+    transform: translate(1112%, 604%);
+    letter-spacing: 2px;
+    margin-left: unset;
+    margin-top: unset;
+  }
+  .card-container {
+    width: unset;
+    max-width: unset;
+  }
+  input {
+    padding: 1rem;
+  }
+  .completed-container {
+    width: 460px;
+  }
+  .name-container,
+.number-container {
+  margin-bottom: 1rem;
+}
+}

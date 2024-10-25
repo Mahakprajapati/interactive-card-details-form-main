@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>interactive-card-details-form-main</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Space+Grotesk">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card-container">
+            <div class="main-desktop"></div>
+            <div class="main-mobile"></div>
+            <!-- <img class="main-desktop" src="./interactive-card-details-form-main/images/bg-main-desktop.png"
+                alt="bg-main-desktop" /> -->
+            <div class="card-front">
+                <img class="card-logo" src="./interactive-card-details-form-main/images/card-logo.svg"
+                    alt="card-logo" />
+                <img src="./interactive-card-details-form-main/images/bg-card-front.png" alt="bg-card-front" />
+                <p id="number">0000 0000 0000 0000</p>
+                <div class="name-CVC-container">
+                    <p id="namefull">JANE APPLESEED</p>
+                    <p><span id="YY">00</span>/ <span id="MM">00</span> </p>
+                </div>
+            </div>
+            <div class="card-back">
+                <img src="./interactive-card-details-form-main/images/bg-card-back.png" alt="bg-card-back" />
+                <p id="CVC">000</p>
+            </div>
+        </div>
+        <div class="text-container-outer">
+            <div class="text-container">
+                <div class="name-container">
+                    <p>Cardholder Name</p>
+                    <input type="name" name="name" id="namefull" placeholder="Jane Appleseed" />
+                </div>
+                <div class="number-container">
+                    <p>Card Number</p>
+                    <input type="text" maxlength="19" name="number" id="number" placeholder="e.g. 1234 5678 9123 0000" />
+                    <p class="err">Wrong formate, number only</p>
+                </div>
+                <div class="m-y-cvc-container">
+                    <div class="p-M-Y-container">
+                        <p>Exp. Date (MM/YY)</p>
+                        <div class="M-Y-container">
+                            <div class="month-container">
+                                <input type="text" minlength="2" maxlength="2" name="number" id="MM" placeholder="MM" />
+                                <p class="err">can't be blank</p>
+                            </div>
+                            <div class="year-container">
+                                <input type="text" minlength="2" maxlength="2" name="number" id="YY" placeholder="YY" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="CVC-container">
+                        <p>CVC</p>
+                        <input type="text" minlength="3" maxlength="3" name="number" id="CVC" placeholder="e.g. 123" />
+                        <p class="err">can't be blank</p>
+                    </div>
+                </div>
+                <div class="button">Confirm</div>
+            </div>
+            <div class="completed-container">
+                <img src="./interactive-card-details-form-main/images/icon-complete.svg" alt="icon-complete">
+                <h1>Thank you!</h1>
+                <p> We've added your card details</p>
+                <div class="button">Continue</div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+</html>
